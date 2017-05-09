@@ -1,18 +1,20 @@
 const React = require('react');
-const BrowserRouter = require('react-router-dom');
-const Switch = BrowserRouter.Switch;
-const Route = BrowserRouter.Route;
-const Router = BrowserRouter.Router;
+const ReactRouter = require('react-router-dom');
+const Router = ReactRouter.BrowserRouter;
+const Switch = ReactRouter.Switch;
+const Route = ReactRouter.Route;
 
+const Home = require('./pages/Home');
 
 const App = () => {
   return (
     <Router>
       <div>
         <header>This is my funny header</header>
-          <Switch>
-            <Route exact path="/" render={() => <p>This is my funny HP</p>} />
-          </Switch>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route render={() => <p>Not Found</p>} /> 
+        </Switch>
       </div>
     </Router>
   );
