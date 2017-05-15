@@ -1,7 +1,12 @@
 const React = require('react');
 
+const WeatherForm = require('../components/WeatherForm');
+
 const Home = () => (
-  <p>This is my funny HP</p>
+  <div className="home page">
+    <h1>Enter a city and State</h1>
+    <WeatherForm className="home-form" />
+  </div>
 );
 
 module.exports = Home;

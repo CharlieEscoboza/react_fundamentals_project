@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+}
+
+.header {
+  background: #ff9800;
+  padding: 0 25px;
+}
+
+.home-form > .button {
+  display: block;
+  margin: 20px auto 0;
+}
+
+.logo > a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.row {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.home {
+  background: #5f9dd4;
+}
+
+.page {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 67px); /* 67px header height */
+  justify-content: center;
+}
+
+.weather-form > input {
+  border: 0;
+  border-radius: 10px;
+  padding: 3px 10px;
+  outline-color: transparent;
+  text-align: center;
+}
+
+.weather-form > .button {
+  background: #8fbc8f;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.header-form > input {
+  margin-right: 10px;
+}
