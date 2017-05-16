@@ -57,3 +57,21 @@ body {
 .header-form > input {
   margin-right: 10px;
 }
+
+.image-container img {
+  width: 100%;
+}
+
+.casts-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.forecast-detail {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 33%;
+  text-align: center;
+  text-decoration: none;
+}
