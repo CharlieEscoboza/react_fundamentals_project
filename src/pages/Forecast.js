@@ -43,7 +43,7 @@ class Forecast extends React.Component {
         {list.length > 0 && (
           <div className="casts-container">
             {list.map((item, index) => {
-              return <ForecastPreview key={index} city={city} {...item} />
+              return <ForecastPreview key={index} city={city} item={item} />
             })}
           </div>
         )}
