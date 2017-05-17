@@ -1,5 +1,5 @@
-const React = require('react');
-const Link = require('react-router-dom').Link;
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 class WeatherForm extends React.Component {
 
@@ -46,4 +46,4 @@ WeatherForm.defaultProps = {
   placeholder: 'Santiago de los Caballeros'
 };
 
-module.exports = WeatherForm;
+export default WeatherForm;

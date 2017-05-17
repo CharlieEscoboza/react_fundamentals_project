@@ -1,6 +1,6 @@
-const React = require('react');
+import React from 'react';
 
-const WeatherForm = require('../components/WeatherForm');
+import WeatherForm from '../components/WeatherForm';
 
 const Home = () => (
   <div className="home page">
@@ -9,4 +9,4 @@ const Home = () => (
   </div>
 );
 
-module.exports = Home;
+export default Home;

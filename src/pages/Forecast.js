@@ -1,10 +1,10 @@
-const QueryString = require('query-string');
-const React = require('react');
+import { parse } from 'query-string';
+import React from 'react';
 
-const ForecastPreview = require('../components/ForecastPreview');
-const Loading = require('../components/Loading');
+import ForecastPreview from '../components/ForecastPreview';
+import Loading from '../components/Loading';
 
-const { fetchData } = require('../helpers/api');
+import fetchData from '../helpers/api';
 
 class Forecast extends React.Component {
 
@@ -27,7 +27,7 @@ class Forecast extends React.Component {
   }
 
   componentDidMount() {
-    const cityName = QueryString.parse(this.props.location.search).city;
+    const cityName = parse(this.props.location.search).city;
 
     fetchData(cityName)
     .then(this._setForecast);
@@ -52,4 +52,4 @@ class Forecast extends React.Component {
   }
 }
 
-module.exports = Forecast;
+export default Forecast;

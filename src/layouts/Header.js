@@ -1,6 +1,6 @@
-const React = require('react');
-const Link = require('react-router-dom').Link;
-const WeatherForm = require('../components/WeatherForm');
+import React from 'react';
+import { Link } from 'react-router-dom';
+import WeatherForm from '../components/WeatherForm';
 
 const Header = () => {
   return (
@@ -15,4 +15,4 @@ const Header = () => {
   );
 };
 
-module.exports = Header;
+export default Header;

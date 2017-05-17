@@ -1,7 +1,7 @@
-const moment = require('moment');
-const React = require('react');
+import moment from 'moment';
+import React from 'react';
 
-const Link = require('react-router-dom').Link;
+import { Link } from 'react-router-dom';
 
 const ForecastPreview = ({ city = {}, children, item }) => {
   const icon = item.weather.length ? item.weather[0].icon : '';
@@ -21,4 +21,4 @@ const ForecastPreview = ({ city = {}, children, item }) => {
   );
 }
 
-module.exports = ForecastPreview;
+export default ForecastPreview;

@@ -1,24 +1,24 @@
-const React = require('react');
-const ReactRouter = require('react-router-dom');
-const Router = ReactRouter.BrowserRouter;
-const Route = ReactRouter.Route;
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-const Details = require('./pages/Details');
-const Forecast = require('./pages/Forecast');
-const Header = require('./layouts/Header');
-const Home = require('./pages/Home');
+import Details from './pages/Details';
+import Forecast from './pages/Forecast';
+import Header from './layouts/Header';
+import Home from './pages/Home';
 
 const App = () => {
   return (
-    <Router>
+    <BrowserRouter>
       <div>
-        <Route path="/" component={Header} />
-        <Route exact path="/" component={Home} />
-        <Route exact path="/forecast" component={Forecast} />
-        <Route path="/details" component={Details} />
+        <Header />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/forecast" component={Forecast} />
+          <Route path="/details" component={Details} />
+        </Switch>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 };
 
-module.exports = App;
+export default App;

@@ -1,6 +1,6 @@
-const React = require('react');
+import React from 'react';
 
-const ForecastPreview = require('../components/ForecastPreview');
+import ForecastPreview from '../components/ForecastPreview';
 
 const Details = (props) => {
   const { city = {}, item = {} } = props.location.state;
@@ -20,4 +20,4 @@ const Details = (props) => {
   );
 };
 
-module.exports = Details;
+export default Details;

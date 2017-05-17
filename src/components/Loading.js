@@ -1,4 +1,4 @@
-const React = require('react');
+import React from 'react';
 
 class Loading extends React.Component {
 
@@ -44,4 +44,4 @@ Loading.defaultProps = {
   speed: 300
 }
 
-module.exports = Loading;
+export default Loading;
