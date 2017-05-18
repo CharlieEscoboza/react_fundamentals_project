@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "set NODE_ENV=production&&webpack -p --config webpack.config.js",
+    "deploy": "npm run build && firebase login --interactive && firebase init && firebase deploy",
     "dev": "webpack-dev-server --hot --inline --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.16.1",
+    "firebase-tools": "^3.9.0",
     "moment": "^2.18.1",
     "prop-types": "^15.5.8",
     "query-string": "^4.3.4",
