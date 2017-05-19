@@ -13,7 +13,7 @@ const ForecastPreview = ({ city = {}, children, item }) => {
         state: {city, item}
       }}>
       <div className="image-container">
-        <img src={`https://crossorigin.me/http://openweathermap.org/img/w/${icon}.png`}/>
+        <img src={`//openweathermap.org/img/w/${icon}.png`}/>
       </div>
       <h3>{formatedDate}</h3>
       {children}
